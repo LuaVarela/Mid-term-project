@@ -3,8 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us Page</title>
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contac us Page</title>
   </head>
-  <body></body>
+  <body>
+    <header></header>
+     <!-- Form section in progress  -->
+    <nav>
+      <div>
+        <img src="project-assets 2/logos/circle.svg" alt="" />
+        <ul>
+          <li><a href="#"> Home </a></li>
+          <li><a href="projects.html"> Projects </a></li>
+          <li><a href="#"> Services </a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="contact.html" class="blue-button"> Contact Us</a>
+      </div>
+      <div><h1>Contact Us</h1></div>
+      <div class="contact-form">
+        <form action="">
+            <label for="full-name">Full Name*</label>
+            <input type="text" name="full-name" id="full-name" required placeholder="Enter your full name"> 
+            <div class="contact-flex">
+                <div>
+                    <label for="emailaddress">Email</label>
+                    <input type="emailaddress" name="emailaddress" id="emailaddress" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone">
+                </div>   
+            </div>
+            <label for="message">Message*</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+            <input type="submit" value="Submit" class="blue-button" id="submit-form">
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Footer section DONE  -->
+    <footer class="container section centering-elements-footer">
+      <div class="footer-flex">
+        <img src="project-assets 2/logos/circle.svg" alt="" />
+        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+      </div>
+      <div class="footer-grid">
+        <a href="#">Team</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Press</a>
+        <a href="#">Projects</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
