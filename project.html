@@ -1,3 +1,5 @@
+<!-- Recorda que con el # dentro de un hipervínculo especificamos un id de elemento html hacia el que se debe desplazar la ventana -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,100 +11,169 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div>
-          <img src="project-assets 2/logos/circle.svg" alt="">
-          <ul>
-            <li><a href="#"> Home </a></li>
-            <li><a href="projects.html"> Projects </a></li>
-            <li><a href="#"> Services </a></li>
-          </ul>
-        </div>
-        <div>
-          <a href="contact.html" class="blue-button"> Contact Us</a>
-        </div>
-      </nav>
-    </header>
+      <div>
+        <img src="project-assets 2/logos/circle.svg" alt="" />
       </div>
-      <div class="single-project-subtitle">
-        <h1>Simplify</h1>
-        <p> UI Desing & App Development </p>
-        <p>Completed on 2/2/22</p>
-        <div class="single-project-image"><img src="project-assets 2/projects-section/1.jpg"></div>
-       
-        <p> Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-
-          Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nis cillum minim tempor enim. </p> 
-
-<!-- OTHER PROJECTS SECTION  -->
-<section id="projects-section" class="section container">
-  <h2>Other Projects</h2>
-  <div id="projects-grid" class="container">
-    <div class="project-item">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="project-assets 2/projects-section/4.jpg" alt="" />
-        </div>
-        <div class="project-content">
-          <h3 id="title1">Orbit</h3>
-          <p id="content1">UI Design</p>
-          <div class="projects-link link"><a href="">Learn More</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="project-item">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="project-assets 2/projects-section/5.jpg" />
-        </div>
-        <div class="project-content">
-          <h3 id="title2">Purify</h3>
-          <p id="content2">UI/UX Desing</p>
-          <div class="projects-link link"><a href="">Learn More</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="project-item">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="project-assets 2/projects-section/6.jpg" />
-        </div>
-        <div class="project-content">
-          <h3 id="title3">CryptoPie</h3>
-          <p id="content3">App Development</p>
-          <div class="projects-link link"><a href="">Learn More</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Questions & footer part. DONE -->
-        <section id="questions-section" class="big-rectangle">
-          <div class="questions-flex">
-              <h2>Do you have any questions?</h2>
-              <p>Let us help you!</p>
-              <form action="" id="questions-form">
-                  <input type="email" name="email" id="email" placeholder="Enter your email">
-                  <input type="submit" value="Suscribe" class="blue-button" id="question-suscribe-button">
-              </form>
+      <div class="desktop-view nav-bar-desktop">
+        <div class="nav-flex">
+          <div>
+            <a href="#" class="nav-bar-logo"></a>
           </div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" id="active-desktop">Projects</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="contact.html" class="blue-button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-view nav-bar-mobile container">
+        <div class="nav-bar-flex">
+          <a href="#" class="nav-bar-logo-mobile"></a>
+          <div class="hamburger-container">
+            <button class="hamburger">
+              <span class="menuIcon material-symbols-outlined">menu</span>
+              <span class="closeIcon material-symbols-outlined">close</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- BODY MAIN SECTION  -->
+    <main>
+      <section id="single-project" class="section container">
+        <div class="menu-container mobile-view container">
+          <nav>
+            <ul class="menu">
+              <li><a class="menuItem" href="index.html">Home</a></li>
+              <li><a class="menuItem" href="#">Projects</a></li>
+              <li><a class="menuItem" href="#">About</a></li>
+              <li><a class="menuItem" href="contact.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <h1 id="titleIndividual"></h1>
+        <p>Simplify</p>
+        <div class="single-project-subtitle">
+          <h2>UI Design & App Development</h2>
+          <p>Completed on June 22, 2022</p>
+        </div>
+        <div class="single-project-img"></div>
+        <p id="contentIndividual">
+          Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui
+          esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+          Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate
+          aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis
+          id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore
+          cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+          sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat
+          nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id
+          quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum
+          minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
+          deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud
+          irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+          deserunt mollit dolore cillum minim tempor enim. Elit aute irure
+          tempor cupidatat incididunt sint deserunt ut voluptate aute id
+          deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis
+          ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat
+          incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis
+          id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore
+          cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt
+          sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat
+          nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor
+          enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
+          voluptate aute id deserunt nis cillum minim tempor enim.
+        </p>
       </section>
-      <footer class="container section centering-elements-footer">
-        <div class="footer-flex">
-            <img src="project-assets 2/logos/circle.svg" alt="">
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+      <!-- OTHER PROJECTS SECTION  -->
+      <section id="projects-section" class="section container">
+        <h2>Other Projects</h2>
+        <div id="projects-grid" class="container">
+          <div class="project-item">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="project-assets 2/projects-section/4.jpg" alt="" />
+              </div>
+              <div class="project-content">
+                <h3 id="title1">Orbit</h3>
+                <p id="content1">UI Design</p>
+                <div class="projects-link link"><a href="">Learn More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="project-assets 2/projects-section/5.jpg" />
+              </div>
+              <div class="project-content">
+                <h3 id="title2">Purify</h3>
+                <p id="content2">UI/UX Desing</p>
+                <div class="projects-link link"><a href="">Learn More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="project-assets 2/projects-section/6.jpg" />
+              </div>
+              <div class="project-content">
+                <h3 id="title3">CryptoPie</h3>
+                <p id="content3">App Development</p>
+                <div class="projects-link link"><a href="">Learn More</a></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer-grid">
-            <a href="#">Team</a>
-            <a href="#">Services</a>
-            <a href="#">About Us</a>
-            <a href="#">Press</a>
-            <a href="#">Projects</a>
-            <a href="#">Privacy Policy</a>
+      </section>
+
+      <!-- Questions part -->
+      <section id="questions-section" class="big-rectangle">
+        <div class="questions-flex">
+          <h2>Do you have any questions?</h2>
+          <p>Let us help you!</p>
+          <form action="" id="questions-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <input
+              type="submit"
+              value="Suscribe"
+              class="blue-button"
+              id="question-suscribe-button"
+            />
+          </form>
         </div>
-      </footer>
-      <script src="index.js"></script>
-        </body>
-      </html>
-      
+      </section>
+    </main>
+
+    <!-- Footer part -->
+
+    <footer
+      id="padding-mobile"
+      class="container section centering-elements-footer desktop-footer"
+    >
+      <div class="footer-flex">
+        <img src="project-assets 2/logos/circle.svg" alt="" />
+        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+      </div>
+      <div class="footer-grid">
+        <a href="#">Team</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Press</a>
+        <a href="#">Projects</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

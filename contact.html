@@ -8,21 +8,50 @@
     <title>Contac us Page</title>
   </head>
   <body>
-    <header></header>
-     <!-- Form section in progress  -->
-    <nav>
+    <header>
       <div>
-        <img src="project-assets 2/logos/circle.svg" alt="" />
-        <ul>
-          <li><a href="#"> Home </a></li>
-          <li><a href="projects.html"> Projects </a></li>
-          <li><a href="#"> Services </a></li>
-        </ul>
+        <img src="project-assets 2/logos/circle.svg" alt="" /> 
       </div>
+      <div class="desktop-view nav-bar-desktop"> </div>
+      <div class="nav-flex"> </div>
+          <div>
+              <a href="#" class="nav-bar-logo"></a>
+          </div>
+          <div>
+              <ul>
+                  <li ><a href="index.html">Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="#">Services</a></li>
+              </ul>
+          </div>
+          <div>
+              <a href="#" class="blue-button">Contact Us</a>
+          </div>
+  <div class="mobile-view nav-bar-mobile container"> </div>
+      <div class="nav-bar-flex"> </div>
+          <a href="#" class="nav-bar-logo-mobile"></a>
+          <div class="hamburger-container">
+              <button class="hamburger">
+                  <span class="menuIcon material-symbols-outlined">menu</span>
+                  <span class="closeIcon material-symbols-outlined">close</span>
+              </button>
+          </div>
+     </header>
+     <!-- Form section -->
+     <main>
+      <section id="contact" class="section container">
+        <div class="menu-container mobile-view container">
+            <nav>
+                <ul class="menu">
+                    <li ><a class="menuItem" href="index.html">Home</a></li>
+                    <li><a class="menuItem" href="projects.html">Projects</a></li>
+                    <li><a class="menuItem" href="#">About</a></li>
+                    <li><a class="menuItem" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
       <div>
-        <a href="contact.html" class="blue-button"> Contact Us</a>
-      </div>
-      <div><h1>Contact Us</h1></div>
+        <h1>Contact Us</h1></div>
       <div class="contact-form">
         <form action="">
             <label for="full-name">Full Name*</label>
@@ -43,9 +72,9 @@
           </form>
         </div>
       </div>
-    </nav>
-    <!-- Footer section DONE  -->
-    <footer class="container section centering-elements-footer">
+    </main>
+    <!-- Footer section -->
+    <footer id="padding-mobile" class="container section centering-elements-footer desktop-footer">
       <div class="footer-flex">
         <img src="project-assets 2/logos/circle.svg" alt="" />
         <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
@@ -62,3 +91,6 @@
     <script src="index.js"></script>
   </body>
 </html>
+
+
+
