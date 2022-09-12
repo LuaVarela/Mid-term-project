@@ -7,157 +7,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=>, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="/index.js"></script>
     <title>Home Page</title>
   </head>
   <body>
     <header>
-      <div class="desktop-view nav-bar-desktop"></div>
-      <div class="nav-flex"></div>
-      <div>
-        <a href="#" class="nav-bar-logo"></a>
-      </div>
-      <div>
-        <img src="project-assets 2/logos/circle.svg" alt="" />
-        <ul>
-          <li><a href="#"> Home </a></li>
-          <li><a href="projects.html"> Projects </a></li>
-          <li><a href="#"> Services </a></li>
+      <!------------------ NAVBAR SECTION --------------------->
+      <nav>
+        <img id="navbar-logo" src="project-assets/logos/circle.svg" alt="" />
+        <ul class="menu">
+          <li><a class="menuItem" href="index.html">Home</a></li>
+          <li><a class="menuItem" href="project.html">Projects</a></li>
+          <li><a class="menuItem" href="#">Services</a></li>
         </ul>
-      </div>
-      <div>
-        <a href="contact.html" class="blue-button"> Contact Us</a>
-      </div>
-      <div class="mobile-view nav-bar-mobile container">
-        <div class="nav-bar-flex">
-          <a href="#" class="nav-bar-logo-mobile"></a>
-          <div class="hamburger-container">
-            <button class="hamburger">
-              <span class="menuIcon material-symbols-outlined">menu</span>
-              <span class="closeIcon material-symbols-outlined">close</span>
-            </button>
-          </div>
-        </div>
-      </div>
+        <a href="contact.html" class="blue-button" id="navbar-button">
+          Contact Us</a
+        >
+      </nav>
     </header>
-    <!-- BODY MAIN SECTION  -->
     <main>
-      <section id="empower-section" class="section container">
-        <div class="menu-container mobile-view">
-          <nav>
-            <ul class="menu">
-              <li><a class="menuItem" id="active-burger" href="#">Home</a></li>
-              <li><a class="menuItem" href="projects.html">Projects</a></li>
-              <li><a class="menuItem" href="#">About</a></li>
-              <li><a class="menuItem" href="contact.html">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
+      <section id="empower-section">
         <div class="empower-content">
-          <h1>Empower Your Business With Stunning Design!</h1>
+          <h1>
+            Empower Your <br />
+            Business With <br />
+            Stunning Design!
+          </h1>
           <p>
             Circle is a digital design and development studio. We design and
             develop astonishing websites and mobile apps.
           </p>
           <div id="empower-section-buttons">
-            <a href="#">See our work</a>
             <a href="#" class="blue-button">Get in touch</a>
+            <a class="link" href="#">See our work</a>
           </div>
         </div>
         <div class="empower-images">
-          <img src="project-assets 2/hero-section/card-1.png" alt="" />
           <img
-            src="project-assets 2/hero-section/hero-image.png"
+            src="project-assets/hero-section/card-1.png"
+            alt=""
+            class="desktop-view-card-1"
+          />
+          <img
+            src="project-assets/hero-section/hero-image.png"
             alt=""
             class="yellow-circle-man"
           />
-          <img src="project-assets 2/hero-section/card-2.png" alt="" />
+          <img
+            src="project-assets/hero-section/card-2.png"
+            alt=""
+            class="desktop-view-card-2"
+          />
         </div>
       </section>
-      <!-- Logos Section  -->
-      <section id="logos-section" class="section container">
+      <!----------------- Logos Section  ----------------->
+      <section id="logos-section">
         <div class="company-logo">
-          <img src="project-assets 2/logos/airbnb-logo.svg" alt="" />
+          <img src="project-assets/logos/airbnb-logo.svg" alt="" />
         </div>
         <div class="company-logo">
-          <img src="project-assets 2/logos/google-logo.svg" alt="" />
+          <img src="project-assets/logos/google-logo.svg" alt="" />
         </div>
         <div class="company-logo">
-          <img src="project-assets 2/logos/microsoft-logo.svg" alt="" />
+          <img src="project-assets/logos/microsoft-logo.svg" alt="" />
         </div>
         <div class="company-logo">
-          <img src="project-assets 2/logos/fedex-logo.svg" alt="" />
+          <img src="project-assets/logos/fedex-logo.svg" alt="" />
         </div>
         <div class="company-logo">
           <img
-            src="project-assets 2/logos/amazon-logo.svg"
+            src="project-assets/logos/amazon-logo.svg"
             alt=""
             id="amazon-logo"
           />
         </div>
       </section>
-      <section id="projects-section" class="section container">
+      <!------------ RECENT PROJECTS SECTION  ---------------->
+      <section id="projects-section">
         <h2>Recent Projects</h2>
-        <div id="projects-grid" class="container">
-          <div class="project-item">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="project-assets 2/projects-section/1.jpg" alt="" />
-              </div>
-              <div class="project-content">
-                <h3 id="title1">Simplify</h3>
-                <p id="content1">UI Design & App Development</p>
-                <div class="projects-link link"><a href="">Learn More</a></div>
-              </div>
+        <div class="container-project">
+          <article class="project-item">
+            <div class="project-image">
+              <img src="project-assets/projects-section/1.jpg" alt="" />
             </div>
-          </div>
-          <div class="project-item">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="project-assets 2/projects-section/2.jpg" />
-              </div>
-              <div class="project-content">
-                <h3 id="title2">Dashcoin</h3>
-                <p id="content2">Web Development</p>
-                <div class="projects-link link"><a href="">Learn More</a></div>
-              </div>
+            <div class="project-content">
+              <h3 id="title1">Simplify</h3>
+              <p class="content1">UI Design & App Development</p>
+              <div class="link"><a href="">Learn More</a></div>
             </div>
-          </div>
-          <div class="project-item">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="project-assets 2/projects-section/3.jpg" />
-              </div>
-              <div class="project-content">
-                <h3 id="title3">Vectorify</h3>
-                <p id="content3">User Experience Design</p>
-                <div class="projects-link link"><a href="">Learn More</a></div>
-              </div>
+          </article>
+          <article class="project-item">
+            <div class="project-image">
+              <img src="project-assets/projects-section/2.jpg" />
             </div>
-          </div>
+            <div class="project-content">
+              <h3 id="title2">Dashcoin</h3>
+              <p class="content2">Web Development</p>
+              <div class="link"><a href="">Learn More</a></div>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="project-image">
+              <img src="project-assets/projects-section/3.jpg" />
+            </div>
+            <div class="project-content">
+              <h3 class="title3">Vectorify</h3>
+              <p class="content3">User Experience Design</p>
+              <div class="link"><a href="">Learn More</a></div>
+            </div>
+          </article>
         </div>
       </section>
-
-      <!-- Client Section  -->
-      <section id="clients-section" class="section big-rectangle">
+      <!-- CLIENT SECTION -->
+      <section id="clients-section" class="section-big-rectangle">
         <div class="clients-container">
-          <div class="desktop-view">
             <img
-              src="project-assets 2/testimonial-section/memoji-1.png"
+              src="project-assets/testimonial-section/memoji-1.png"
               alt=""
               class="memojis memoji-up-left"
             />
             <img
-              src="project-assets 2/testimonial-section/memoji-3.png"
+              src="project-assets/testimonial-section/memoji-3.png"
               alt=""
               class="memojis memoji-down-left"
             />
             <img
-              src="project-assets 2/testimonial-section/memoji-4.png"
+              src="project-assets/testimonial-section/memoji-4.png"
               alt=""
               class="memojis memoji-up-right"
             />
             <img
-              src="project-assets 2/testimonial-section/memoji-3.png"
+              src="project-assets/testimonial-section/memoji-2.png"
               alt=""
               class="memojis memoji-down-right"
             />
@@ -173,7 +153,7 @@
             <div id="client-says-flex">
               <div>
                 <img
-                  src="project-assets 2/testimonial-section/profile.png"
+                  src="project-assets/testimonial-section/profile.png"
                   alt=""
                 />
               </div>
@@ -185,41 +165,50 @@
           </div>
         </div>
       </section>
-      <!-- Services Section  -->
-      <section id="services-section" class="section container">
+      <!--SERVICE SECTION  -->
+      <section id="services-section">
         <h2>Our services</h2>
         <div class="services-grid">
           <div class="services-card">
-            <div class="service-icon" id="pen"></div>
+            <div class="service-icon" id="pen"> <img
+              src="project-assets/icons/pen.svg"
+              alt=""
+            /> </div>
             <div class="service-content">
               <h3>User Interface Design</h3>
               <p>
                 Circle provides you with a stunning user interface design that
                 is accessible to everyone.
               </p>
-              <div class="services-link link"><a href="#">Learn More</a></div>
+              <div class="link"><a href="">Learn More</a></div>
             </div>
           </div>
           <div class="services-card">
-            <div class="service-icon" id="mouse"></div>
+            <div class="service-icon" id="mouse"> <img
+              src="project-assets/icons/2.svg"
+              alt=""
+            /></div>
             <div class="service-content">
               <h3>User Experience Design</h3>
               <p>
                 Circle always focuses on delivering the best user experience to
                 your customers.
               </p>
-              <div class="services-link link"><a href="#">Learn More</a></div>
+              <div class="link"><a href="">Learn More</a></div>
             </div>
           </div>
           <div class="services-card">
-            <div class="service-icon" id="code"></div>
+            <div class="service-icon" id="code"> <img
+              src="project-assets/icons/3.svg"
+              alt=""
+            /> </div>
             <div class="service-content">
               <h3>Application Development</h3>
               <p>
                 We develop high-quality mobile and web applications using the
                 latest technology stack.
               </p>
-              <div class="services-link link"><a href="#">Learn More</a></div>
+              <div class="link"><a href="">Learn More</a></div>
             </div>
           </div>
         </div>
@@ -228,7 +217,7 @@
       <section id="questions-section" class="big-rectangle">
         <div class="questions-flex">
           <h2>Do you have any questions?</h2>
-          <p>Let us help you!</p>
+          <div class= "help-us"> <p>Let us help you!</p> </div>
           <form action="" id="questions-form">
             <input
               type="email"
@@ -236,23 +225,19 @@
               id="email"
               placeholder="Enter your email"
             />
-            <input
-              type="submit"
-              value="Suscribe"
-              class="blue-button"
-              id="question-suscribe-button"
-            />
+            <div id="question-suscribe-button"> </div>
+            <input type="submit" value="Suscribe" class="blue-button" />
           </form>
         </div>
       </section>
     </main>
     <!-- FOOTER SECTION  -->
-    <footer class="container section centering-elements-footer desktop-footer">
+    <footer>
       <div class="footer-flex">
-        <img src="project-assets 2/logos/circle.svg" alt="" />
+        <img src="project-assets/logos/circle.svg" alt="" />
         <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
       </div>
-      <div class="footer-grid">
+      <div class="footer-links">
         <a href="#">Team</a>
         <a href="#">Services</a>
         <a href="#">About Us</a>
@@ -261,6 +246,5 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
-    <script src="index.js"></script>
   </body>
 </html>

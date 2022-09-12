@@ -1,231 +1,361 @@
-body{
-    background-color: #F2F4FC;
-} 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-a{
-    text-decoration: none;
-}
-footer{
-    margin: 60px 0 100px 0;
-    font-size: 17px;
+/* ------ MOVIL VIEW  FIRST ------ */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  background-color: #f2f4fc;
 }
 
-.blue-button{
-    background-color: #072AC8;
-    padding: 15px 30px;
-    color: #FFFFFF;
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #6b708d;
 }
-.blue-button:hover{
-    background-color: #292E47;
+
+h1,
+h2,
+h3 {
+  color: #292e47;
 }
-.company-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 18px;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+main {
+  margin: 35px 30px;
+}
+
+p {
+  font-size: 17px;
+  color: #6b708d;
+  text-align: justify;
+}
+footer {
+  margin: 60px 0 100px 0;
+  font-size: 17px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.menu ul {
+  padding: 0px;
+}
+
+nav img {
+  width: 60px;
+}
+
+.blue-button {
+  background-color: #072ac8;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.blue-button:hover {
+  background-color: #292e47;
+}
+
+#navbar-button {
+  display: none;
+  margin-right: 200px;
+}
+
+#logos-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+
+#logos-section img {
+  width: 90px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  filter: grayscale(100%);
+}
+
+#empower-section {
+  display: block;
+}
+
+#empower-section-buttons {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px 0px 20px;
+}
+
+#empower-section h1 {
+  font-size: 30px;
+}
+
+.empower-images {
+  position: relative;
+  width: 100%;
+}
+
+.yellow-circle-man {
+  width: 100%;
+}
+
+.desktop-view-card-1 {
+  position: absolute;
+  top: -14px;
+  left: -40px;
+  width: 200px;
+}
+
+.desktop-view-card-2 {
+  position: absolute;
+  bottom: -70px;
+  right: -47px;
+  width: 200px;
+}
+
+#projects-section {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0px;
+  flex-wrap: wrap;
+}
+
+#projects-section h2 {
+  font-size: 24px;
+  text-align: center;
 }
 
 .project-card {
-    display: flex;
-    width: 100%;
-    height: 600px;
-    max-height: 600px;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.project-image>img{
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-.project-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  max-height: 600px;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.clients-flex{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.clients-container{
-    display: flex;
-    position: relative;
+.project-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: fill;
 }
 
-.memojis{
-    width: 15%;
-    position: absolute;
+.project-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-bottom: 25px;
 }
-.memoji-up-left{
-    margin: 30px 0 0 60px;
-    top: 0;
-    left: 0;
+
+#clients-section {
+  margin: 20px -30px 30px -30px;
+  height: 470px;
+  background-color: #292e47;
+  display: flex;
+  align-items: center;
+  background-image: url("project-assets/testimonial-section/orbit.png");
+  background-size: cover;
+  background-position: 50% 50%;
 }
-.memoji-down-left{
-    margin: 0 0 30px 60px;
-    bottom: 0;
-    left: 0;
+
+#clients-section h3 {
+  text-align: center;
+  color: #f2f4fc;
+  font-size: 32px;
+  line-height: 150%;
 }
-.memoji-up-right{
-    margin: 30px 60px 0 0;
-    top: 0;
-    right: 0;
+
+.memojis {
+  display: none;
 }
-.memoji-down-right{
-    margin: 0 60px 30px 0;
-    bottom: 0;
-    right: 0;
+
+#clients-section p {
+  text-align: center;
+  font-size: 18px;
 }
-.services-card{
-    width: 100%;
-    background-color: #fff;
+
+#yellow-quote {
+  font-size: 24px;
+  color: #ffe600;
+  line-height: 160%;
+  font-weight: 500;
 }
-.service-icon{
+#client-says-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client-says-flex img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#client-says-text h4 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #a2d6f9;
+  text-align: left;
+}
+#client-says-text p {
+  font-size: 13px;
+  color: #ecf7ff;
+  text-align: left;
+}
+
+#questions-section {
+  background-color: #ffc600;
+  height: 430px;
+  margin-top: 22px;
+}
+#questions-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#questions-section h2 {
+  text-align: center;
+  line-height: 150%;
+  padding-top: 50px;
+}
+
+.help-us p {
+  text-align: center;
+  color: #292e47;
+}
+
+#email {
+  height: 80px;
+  margin: 30px 0 30px;
+  padding-left: 94px;
+  border: none;
+  color: #292e47;
+  font-size: 17px;
+  background-image: url("project-assets/newsletter/icon/mail.svg");
+  background-size: 10%;
+  background-position: 7% 50%;
+  background-repeat: no-repeat;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  margin: 10px 0px -40px 0px;
+  display: inline-grid;
+  grid-column-gap: 26px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-flex img {
+  width: 90px;
+  padding-bottom: 10px;
+}
+
+/* our services  */
+
+#services-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#services-section h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+#services-section p {
+  text-align: left;
+  color: #6b708d;
+  font-size: 16px;
+}
+
+#services-section h3 {
+  font-size: 20px;
+}
+
+.services-card {
+  background-color: white;
+  margin: 8px 0px 10px 0px;
+  padding: 30px 10px 30px 20px;
+}
+
+.services-card img {
+    background-color: #ecf7ff;
     width: 80px;
     height: 80px;
-    margin-top: 40px;
-    margin-left: 40px;
     border-radius: 50%;
-}
-.services-link{
-    margin: 30px 0;
-    text-align: left;
-}
+    object-fit: scale-down;
+  }
 
-.questions-flex{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* DESKTOP VIEW  */
+@media (min-width: 1024px) {
+  #navbar-button {
+    display: inline-flex;
+  }
 
-.centering-elements-footer {
+  nav {
+    padding: 30px;
+  }
+
+  .menu li {
+    padding-left: 60px;
+  }
+  #logos-section img {
+    width: 113px;
+    padding-right: 135px;
+  }
+
+  #empower-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.footer-flex{
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.footer-flex img{
-    width: 100px;
-    height: 30px;
-    margin-bottom: 30px;
-}
-.footer-flex p{
+  }
+
+  #empower-section h1 {
+    font-size: 60px;
+  }
+
+  .desktop-view-card-1 {
+    width: 400px;
+    top: -15px;
+    left: -45px;
+  }
+
+  .desktop-view-card-2 {
+    width: 400px;
+    bottom: -67px;
+    right: -44px;
+  }
+
+  .yellow-circle-man {
     width: 80%;
-    text-align: center;
-    line-height: 150%;
+  }
 }
-.footer-grid{
-    margin: 20px 0 0;
-    display: inline-grid;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.single-project-subtitle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.single-project-subtitle h2{
-    font-size: 24px;
-    margin: 0;
-}
-
-.single-project-img{
-    width: 100%;
-    height: 450px;
-    margin: 100px 0;
-    background-image: url(project-assets\ 2/projects-section/1.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.contact-flex{
-    display: flex;
-    flex-wrap: wrap;
-}
-.contact-flex input{
-    display: flex;
-    width: 100%;
-    align-self: stretch;
-}
-
-#nav-logo{
-    width: 60px;   
-    height: 18px;
-}
-
-#empower-section{
-    display: flex;
-    position:relative;
-}
-#empower-section-buttons{
-    display: flex;
-}
-#logos-section{
-    display: grid;
-}
-#projects-grid{
-    display: grid;
-}
-#clients-section{
-    margin: 60px 0 0;
-    background-color: #292E47;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    background-image: url(project-assets\ 2/testimonial-section/orbit.png); 
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-
-#yellow-quote{
-    color: #FFE600;
-}
-
-#client-says-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#client-says-flex img{
-    width: 60%;
-}
-#client-says-text h4{
-    font-size: 17px;
-    font-weight: 300;
-    color: #A2D6F9;
-    text-align: left;
-}
-#client-says-text p{
-    font-size: 13px;
-    color: #ECF7FF;
-    text-align: left;
-}
-
-
-
-/* @media (min-width:1024px){
-    body {
-        background-color: white;
-    }
-}  */
