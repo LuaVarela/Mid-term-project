@@ -138,7 +138,6 @@ nav img {
 }
 
 #projects-section {
-  display: flex;
   justify-content: center;
   padding: 8px 0px;
   flex-wrap: wrap;
@@ -261,29 +260,9 @@ nav img {
   background-repeat: no-repeat;
 }
 
-.footer-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-links {
-  margin: 10px 0px -40px 0px;
-  display: inline-grid;
-  grid-column-gap: 26px;
-  grid-row-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer-flex img {
-  width: 90px;
-  padding-bottom: 10px;
-}
-
 /* our services  */
 
 #services-section {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -291,7 +270,7 @@ nav img {
 #services-section h2 {
   font-size: 24px;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 #services-section p {
   text-align: left;
@@ -317,45 +296,128 @@ nav img {
     object-fit: scale-down;
   }
 
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-links {
+    margin: 10px 0px -40px 0px;
+    display: inline-grid;
+    grid-column-gap: 26px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .footer-flex img {
+    width: 90px;
+    padding-bottom: 10px;
+  }
+
 /* DESKTOP VIEW  */
 @media (min-width: 1024px) {
+ 
   #navbar-button {
     display: inline-flex;
   }
 
   nav {
-    padding: 30px;
+    padding-left: 30px;
+    margin: 0px 100px 70px 100px;
   }
 
   .menu li {
     padding-left: 60px;
   }
+
+
   #logos-section img {
-    width: 113px;
-    padding-right: 135px;
+    width: 110px;
+    margin: 20px;
+    padding: 30px 50px 30px 50px;
+
   }
 
   #empower-section {
     display: flex;
+    margin: 50px 100px 50px 100px;
   }
 
   #empower-section h1 {
-    font-size: 60px;
+    font-size: 58px;
+    margin-bottom: 30px;
   }
+
+  #empower-section p {
+    font-size: 18px;
+    text-align: left;
+    margin: 30px 155px 30px 0px;
+}
 
   .desktop-view-card-1 {
     width: 400px;
-    top: -15px;
-    left: -45px;
+    top: -70px;
+    left: -140px;
   }
 
   .desktop-view-card-2 {
-    width: 400px;
-    bottom: -67px;
-    right: -44px;
+    width: 350px;
+    bottom: -140px;
+    right: 10px;
   }
 
   .yellow-circle-man {
     width: 80%;
   }
+
+  .empower-images {
+    position: relative;
+    width: 100%;
 }
+
+  #projects-section h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#projects-section {
+  margin: 0px 50px 100px 50px;
+  
+}
+
+  .project-item {
+    display: inline-block;
+    padding: 0px 45px 100px 45px;
+    width: 320px;
+  }
+
+  #projects-section h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 50px;
+}
+
+.services-card {
+  display: inline-grid;
+    margin: 20px 40px 80px 47px;
+    padding: 30px 60px 30px 60px;
+    width: 190px;
+
+}
+
+#services-section h2 {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 125px;
+}
+
+.services-grid{
+  margin: 30px 80px;
+}
+
+
+}
+
