@@ -1,6 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
 
-/* ------ MOVIL VIEW  FIRST ------ */
+/* ------ GENERAL & MOVIL VIEW  ------ */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -172,14 +176,13 @@ nav img {
 }
 
 #clients-section {
+  background: #292e47 url("project-assets/testimonial-section/orbit.png")
+    no-repeat center;
   margin: 20px -30px 30px -30px;
   height: 470px;
-  background-color: #292e47;
   display: flex;
   align-items: center;
-  background-image: url("project-assets/testimonial-section/orbit.png");
   background-size: cover;
-  background-position: 50% 50%;
 }
 
 #clients-section h3 {
@@ -289,35 +292,98 @@ nav img {
 }
 
 .services-card img {
-    background-color: #ecf7ff;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: scale-down;
-  }
+  background-color: #ecf7ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: scale-down;
+}
 
-  .footer-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-links {
-    margin: 10px 0px -40px 0px;
-    display: inline-grid;
-    grid-column-gap: 26px;
-    grid-row-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .footer-flex img {
-    width: 90px;
-    padding-bottom: 10px;
-  }
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  margin: 10px 0px -40px 0px;
+  display: inline-grid;
+  grid-column-gap: 26px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-flex img {
+  width: 90px;
+  padding-bottom: 10px;
+}
+
+#titleIndividual p {
+  font-size: 30px;
+  color: #292e47;
+  margin-bottom: -10px;
+}
+
+#project-page h2 {
+  font-size: 18px;
+}
+
+.single-project-img {
+  width: 100%;
+  height: 450px;
+  margin: 50px 0;
+  background-image: url("project-assets/projects-section/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contentIndividual {
+  font-size: 18px;
+  text-align: left;
+}
+
+.contact-form input {
+  width: 100%;
+  border: 1px none #000;
+  background-color: rgba(107, 112, 141, 0.1);
+  display: block;
+  height: 20px;
+  padding: 30px 0px 30px 6px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333333;
+}
+
+.contact-form label {
+  color: #6b708d;
+  font-size: 20px;
+  margin: 0 0 50px;
+}
+
+textarea {
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  border: 1px none #000;
+  background-color: rgba(107, 112, 141, 0.1);
+  display: block;
+  padding: 30px 0px 30px 6px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  font-size: 16px;
+  color: #333333;
+}
+
+#submit-form {
+  margin-top: 20px;
+  padding: 25px 30px 50px;
+  background-color: #072ac8;
+  color: white;
+}
 
 /* DESKTOP VIEW  */
 @media (min-width: 1024px) {
- 
   #navbar-button {
     display: inline-flex;
   }
@@ -331,12 +397,10 @@ nav img {
     padding-left: 60px;
   }
 
-
   #logos-section img {
     width: 110px;
     margin: 20px;
     padding: 30px 50px 30px 50px;
-
   }
 
   #empower-section {
@@ -353,7 +417,7 @@ nav img {
     font-size: 18px;
     text-align: left;
     margin: 30px 155px 30px 0px;
-}
+  }
 
   .desktop-view-card-1 {
     width: 400px;
@@ -374,17 +438,16 @@ nav img {
   .empower-images {
     position: relative;
     width: 100%;
-}
+  }
 
   #projects-section h2 {
     font-size: 24px;
     text-align: center;
-}
+  }
 
-#projects-section {
-  margin: 0px 50px 100px 50px;
-  
-}
+  #projects-section {
+    margin: 0px 50px 100px 50px;
+  }
 
   .project-item {
     display: inline-block;
@@ -397,27 +460,122 @@ nav img {
     font-size: 24px;
     font-weight: 700;
     padding-left: 50px;
-}
+  }
 
-.services-card {
-  display: inline-grid;
+  .services-card {
+    display: inline-grid;
     margin: 20px 40px 80px 47px;
     padding: 30px 60px 30px 60px;
     width: 190px;
+  }
 
+  #services-section h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 125px;
+  }
+
+  .services-grid {
+    margin: 30px 80px;
+  }
+
+  footer {
+    display: inline-flex;
+  }
+
+  .footer-links {
+    margin-left: 600px;
+    display: inline-grid;
+    grid-column-gap: 26px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-flex img {
+    margin-right: 260px;
+  }
+
+  #email {
+    height: 60px;
+    width: 250px;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  #questions-form .blue-button {
+    height: 60px;
+    width: 250px;
+    font-size: 15px;
+  }
+
+  #questions-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #clients-section {
+    position: relative;
+    margin: 50px;
+    height: 500px;
+  }
+
+  .clients-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .memojis {
+    display: flex;
+    width: 100px;
+  }
+
+  .memoji-up-left {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+  }
+  .memoji-down-left {
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+  }
+  .memoji-up-right {
+    position: absolute;
+    bottom: 50px;
+    right: 90px;
+  }
+  .memoji-down-right {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+  }
+
+  #titleIndividual p {
+    font-size: 58px;
+    color: #292e47;
+  }
+
+  .single-project-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #emailaddress {
+    width: 660px;
+  }
+
+  #phone {
+    width: 660px;
+  }
 }
-
-#services-section h2 {
-  text-align: left;
-  font-size: 24px;
-  font-weight: 700;
-  padding-left: 125px;
-}
-
-.services-grid{
-  margin: 30px 80px;
-}
-
-
-}
-

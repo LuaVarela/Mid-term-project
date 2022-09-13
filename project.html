@@ -5,31 +5,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script src="/index.js"></script>
-    <title>Project Page</title>
+    <title>Home Page</title>
   </head>
   <body>
     <header>
+      <!------------------ NAVBAR SECTION --------------------->
       <nav>
-        <div class="nav-flex">
-          <img id="navbar-logo" src="project-assets/logos/circle.svg" alt="" />
-          <ul class="menu">
-            <li><a class="menuItem" href="index.html">Home</a></li>
-            <li><a class="menuItem" href="project.html">Projects</a></li>
-            <li><a class="menuItem" href="#">Services</a></li>
-          </ul>
-          <a href="contact.html" class="blue-button"> Contact Us</a>
-        </div>
+        <img id="navbar-logo" src="project-assets/logos/circle.svg" alt="" />
+        <ul class="menu">
+          <li><a class="menuItem" href="index.html">Home</a></li>
+          <li><a class="menuItem" href="project.html">Projects</a></li>
+          <li><a class="menuItem" href="#">Services</a></li>
+        </ul>
+        <a href="contact.html" class="blue-button" id="navbar-button">
+          Contact Us</a
+        >
       </nav>
     </header>
-    <!-- BODY MAIN SECTION  -->
     <main>
-      <section id="single-project" class="section container">
-        <div class="menu-container mobile-view container"></div>
-        <h1 id="titleIndividual"></h1>
-        <p>Simplify</p>
+      <!-- TEXT + IMG SECTION  -->
+      <section id="project-page" class="section container">
+        <h1 id="titleIndividual">
+          <p>Simplify</p>
+        </h1>
         <div class="single-project-subtitle">
           <h2>UI Design & App Development</h2>
           <p>Completed on June 22, 2022</p>
@@ -61,53 +72,47 @@
           voluptate aute id deserunt nis cillum minim tempor enim.
         </p>
       </section>
-      <!-- OTHER PROJECTS SECTION  -->
-      <section id="projects-section" class="section container">
+      <!------------ RECENT PROJECTS SECTION  ---------------->
+      <section id="projects-section">
         <h2>Other Projects</h2>
-        <div id="projects-grid" class="container">
-          <div class="project-item">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="project-assets/projects-section/4.jpg" alt="" />
-              </div>
-              <div class="project-content">
-                <h3 id="title1">Orbit</h3>
-                <p id="content1">UI Design</p>
-                <div class="projects-link link"><a href="">Learn More</a></div>
-              </div>
+        <div class="container-project">
+          <article class="project-item">
+            <div class="project-image">
+              <img src="project-assets/projects-section/1.jpg" alt="" />
             </div>
-          </div>
-          <div class="project-item">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="project-assets/projects-section/5.jpg" />
-              </div>
-              <div class="project-content">
-                <h3 id="title2">Purify</h3>
-                <p id="content2">UI/UX Desing</p>
-                <div class="projects-link link"><a href="">Learn More</a></div>
-              </div>
+            <div class="project-content">
+              <h3 id="title1">Orbit</h3>
+              <p class="content1">UI Design</p>
+              <div class="link"><a href="">Learn More</a></div>
             </div>
-          </div>
-          <div class="project-item">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="project-assets/projects-section/6.jpg" />
-              </div>
-              <div class="project-content">
-                <h3 id="title3">CryptoPie</h3>
-                <p id="content3">App Development</p>
-                <div class="projects-link link"><a href="">Learn More</a></div>
-              </div>
+          </article>
+          <article class="project-item">
+            <div class="project-image">
+              <img src="project-assets/projects-section/2.jpg" />
             </div>
-          </div>
+            <div class="project-content">
+              <h3 id="title2">Purify</h3>
+              <p class="content2">UI/UX Design</p>
+              <div class="link"><a href="">Learn More</a></div>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="project-image">
+              <img src="project-assets/projects-section/3.jpg" />
+            </div>
+            <div class="project-content">
+              <h3 class="title3">CryptoPie</h3>
+              <p class="content3">App Development</p>
+              <div class="link"><a href="">Learn More</a></div>
+            </div>
+          </article>
         </div>
       </section>
-      <!-- Questions part -->
+      <!-- QUESTIONS SECTION  -->
       <section id="questions-section" class="big-rectangle">
         <div class="questions-flex">
           <h2>Do you have any questions?</h2>
-          <p>Let us help you!</p>
+          <div class="help-us"><p>Let us help you!</p></div>
           <form action="" id="questions-form">
             <input
               type="email"
@@ -115,26 +120,19 @@
               id="email"
               placeholder="Enter your email"
             />
-            <input
-              type="submit"
-              value="Suscribe"
-              class="blue-button"
-              id="question-suscribe-button"
-            />
+            <div id="question-suscribe-button"></div>
+            <input type="submit" value="Suscribe" class="blue-button" />
           </form>
         </div>
       </section>
     </main>
-    <!-- Footer part -->
-    <footer
-      id="padding-mobile"
-      class="container section centering-elements-footer desktop-footer"
-    >
+    <!-- FOOTER SECTION  -->
+    <footer>
       <div class="footer-flex">
         <img src="project-assets/logos/circle.svg" alt="" />
         <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
       </div>
-      <div class="footer-grid">
+      <div class="footer-links">
         <a href="#">Team</a>
         <a href="#">Services</a>
         <a href="#">About Us</a>
