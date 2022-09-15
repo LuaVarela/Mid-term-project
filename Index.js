@@ -3,17 +3,19 @@ const form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const username = document.querySelector("[name=username]");
-  if (username.length < 3) alert("please insert your name");
+  //   console.log(data);
 
-  const email = document.querySelector("[name=email]");
+  const fullname = document.getElementById("fullname").value;
+  if (fullname.length < 3) alert("please insert your name");
+
+  const email = document.getElementById("emailaddres").value;
   if (!email.length) alert("please insert a valid email");
 
-  const phone = document.querySelector("[name=phone]");
+  const phone = document.getElementById("phone").value;
   if (phone.length < 12 && phone.charAt(0) !== "+")
     alert("please insert a valid phone number +34...");
 
-  const message = document.querySelector("[name=message]");
+  const message = document.getElementById("message").value;
   if (message.length < 50) alert("minimum length 50 characters");
 
   //   console.log(username, email, phone, message);
@@ -21,13 +23,11 @@ form.addEventListener("submit", (event) => {
   const url = "https://database.deta.sh/v1/a0wwnrex/contactmessages/items";
 
   const data = {
-    user: username,
+    user: fullname,
     email: email,
     phone: phone,
     message: message,
   };
-
-  //   console.log(data);
 
   const fetchParams = {
     method: "POST",
